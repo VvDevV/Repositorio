@@ -30,9 +30,15 @@ public class Player : MonoBehaviour
         {
             EnSuelo = true;
         }
+
         else 
         {
             EnSuelo = false;
+        }
+
+        if (collision.transform.tag == "Suelo")
+        {
+            EnSuelo = true;
         }
     }
     IEnumerator EsperarParaPulsar()

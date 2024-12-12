@@ -19,19 +19,44 @@ public class CrearElementos : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2);
             GameObject enemigo = Instantiate<GameObject>(enemigo1);
             enemigo.transform.position = new Vector2(11.95571f, -0.18f);
+
+            int x;
+            x = Random.Range(1, 3);
+
+            if (x == 2)
+            {
+                yield return new WaitForSeconds(2);
+            }
+            else if (x == 4)
+            {
+                yield return new WaitForSeconds(4);
+            }
         }
     }
 
     IEnumerator CrearEnemigo2()
     {
+        //yield return new WaitForSeconds(10);
+
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(3f, 10f));
             GameObject enemigo = Instantiate<GameObject>(enemigo2);
             enemigo.transform.position = new Vector2(12.58947f, 2.92f);
+
+            int x;
+            x = Random.Range(4, 6);
+
+            if (x == 4)
+            {
+                yield return new WaitForSeconds(4);
+            }
+            else if(x == 6)
+            {
+                yield return new WaitForSeconds(6);
+            }
         }
     }
+
 }

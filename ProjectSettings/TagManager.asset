@@ -43,3 +43,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Fondo
+    uniqueID: 1703325229
+    locked: 0
+  - name: Resto
+    uniqueID: 4204017733
+    locked: 0
